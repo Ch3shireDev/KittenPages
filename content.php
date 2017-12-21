@@ -1,3 +1,7 @@
+<p id="demo">A Paragraph.</p>
+
+<script src="script.js"></script>
+
 <?php
 
 $content = file_get_contents('http://loripsum.net/api');
