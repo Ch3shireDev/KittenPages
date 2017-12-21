@@ -22,9 +22,9 @@ textarea {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    display: block; /*reset from inline*/
+    display: block;
     width: 100%;
-    margin: 0; /*remove defaults*/
+    margin: 0;
     padding: 4px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -61,20 +61,19 @@ textarea {
     overflow-x: hidden;
 }
 
+/* Side navigation links */
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
 
-    /* Side navigation links */
-    .sidenav a {
-        color: white;
-        padding: 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-        /* Change color on hover */
-        .sidenav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 /* Style the content */
 .content {
@@ -114,12 +113,12 @@ header {
     color: white;
     padding: 50px;
     text-align: center;
-    font-family: "Droid Sans";
+    /*font-family: "Droid Sans";*/
     font-size: xx-large;
 }
 
 p.head {
-    font-family: "Droid Sans";
+    /*font-family: "Droid Sans";*/
     font-weight: bold;
     text-transform: uppercase;
     flex: 10px;
