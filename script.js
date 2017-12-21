@@ -2,6 +2,7 @@
 //        var str = "A";
 //        document.body.;
 //    }
+debugger;
 "use strict";
 
 class Rectangle{
@@ -11,8 +12,7 @@ class Rectangle{
     }
 
 }
-
-var rect = new Rectangle(10,20);
+// var rect = new Rectangle(10,20);
 
 for(var i=0;i<100;i++) {
     var para = document.createElement("div");
@@ -20,7 +20,7 @@ for(var i=0;i<100;i++) {
     var p2 = document.createElement("div");
     p2.className = "baloon";
     para.appendChild(p2);
-    var node = document.createTextNode("This is new.");
+    var node = document.createTextNode("Number of repetition: "+i);
     p2.appendChild(node);
     document.getElementById("demo").appendChild(para);
 }
