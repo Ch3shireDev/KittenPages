@@ -1,21 +1,65 @@
 <?php
 
+include "HtmlGeneration.php";
 
 if(isset($_POST["message"])){
-?>
-<div class="section">
-    <div class = "baloon">
-<?php
-    $content = $_POST["message"];
-    echo "$content\n";
-?>
-    </div>
-</div>
-<?php
-}
-    ?>
+    Html::div()
+        ->class("section")
+        ->content(
+            Html::div()
+            ->class("baloon")
+            ->content("ciastka")
+        )
+        ->show();
 
-<div class = "section">
+}
+?>
+
+
+
+<?php
+
+
+Html::div()
+    ->class("section")
+    ->content(
+        Html::div()
+        ->class("baloon")
+        ->content(
+            Html::header()
+            ->content(
+                Html::p("Admin Panel")
+                ->class("head")
+            ),
+            Html::p("Publish new post:"),
+            Html::div()
+            ->class("input")
+            ->content(
+                Html::form()
+                ->content(
+                    Html::textarea()
+                    ->id("NewPost")
+                    ->cols("50")
+                    ->rows("5")
+                    ->placeholder("Enter some text...")
+                    ->name("message"),
+                    Html::div()
+                    ->class("button")
+                    ->content(
+                        Html::input()
+                        ->type("submit")
+                        ->value("Send")
+                        ->formmethod("post")
+                    )
+                )
+            )
+        )
+    )
+    ->show();
+?>
+
+
+<!--<div class = "section">
     <div class = "baloon">
         <header>
             <p class="head">Admin Panel</p>
@@ -30,4 +74,4 @@ if(isset($_POST["message"])){
             </form>
         </div>
     </div>
-</div>
+</div>-->
