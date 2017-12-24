@@ -4,7 +4,6 @@
 <head>
     <title>PHP Test</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -34,7 +33,7 @@
 
     <div class="page">
     <?php
-    if(!isset($_GET['page']) or $_GET["page"]=="content"){
+    if(!isset($_GET['page']) or $_GET['page']=="content"){
         include 'content.php';
     }
     else if($_GET["page"]=="admin"){

@@ -1,22 +1,5 @@
 <p id="demo">A Paragraph.</p>
-
-<p>
-    <?php
-    echo $_GET["message"];
-    ?>
-</p>
-
-<div>
-</div>
-<!--<script src="script.js"></script>-->
-<?php
-function foo($x){
-    return $x*$x;
-}
-//$content = file_get_contents('http://loripsum.net/api');
-//for ($i = 1; $i <= 10; $i++) {
-//    $j = 2*$i;
-?>
+<script src="script.js"></script>
 
 
 <!--<script>
