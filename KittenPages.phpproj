@@ -15,10 +15,12 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="admin.php" />
+    <Compile Include="post.php" />
     <Compile Include="content.php" />
-    <Compile Include="HtmlGeneration.php" />
+    <Compile Include="html-generator.php" />
     <Compile Include="index.php" />
+    <Compile Include="Parsedown.php" />
+    <Compile Include="ParsedownExtra.php" />
     <Compile Include="README.md" />
     <Compile Include="script.js" />
   </ItemGroup>
