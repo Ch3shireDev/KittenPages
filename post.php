@@ -1,14 +1,16 @@
 <?php
-$servername = "localhost";
-$username = "cheshire";
-$password = "ppp";
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+
+include_once "config.php";
+
+//session_start();
+
+if(!isset($_SESSION["username"]){
+    exit;
 }
-echo "Connected successfully";
+
+
+
+
 if(isset($_POST["message"])){
     $msg = $_POST["message"];
     $Extra = new ParsedownExtra();

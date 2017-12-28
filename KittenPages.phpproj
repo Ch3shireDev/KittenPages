@@ -15,6 +15,16 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="config.php" />
+    <Compile Include="login\config-oo-format.php" />
+    <Compile Include="login\config.php" />
+    <Compile Include="login.php" />
+    <Compile Include="login\login.php" />
+    <Compile Include="login\logout.php" />
+    <Compile Include="login\register-oo-format.php" />
+    <Compile Include="login\register-pdo-format.php" />
+    <Compile Include="login\register.php" />
+    <Compile Include="login\welcome.php" />
     <Compile Include="post.php" />
     <Compile Include="content.php" />
     <Compile Include="html-generator.php" />
@@ -23,8 +33,13 @@
     <Compile Include="ParsedownExtra.php" />
     <Compile Include="README.md" />
     <Compile Include="script.js" />
+    <Compile Include="admin.php" />
+    <Compile Include="sections-config.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="login\" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 <p id="demo">A Paragraph.</p>
-<script src="script.js"></script>
+<!--<script src="script.js"></script>-->
 
 
 <!--<script>
