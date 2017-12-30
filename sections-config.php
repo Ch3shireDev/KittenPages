@@ -66,5 +66,6 @@
     $navigation->Add('Post', 'post.php');
     $navigation->Add('Login', 'login.php');
     $navigation->Add('Register', 'register.php');
+    $navigation->Add('Logout', 'logout.php');
 
 ?>

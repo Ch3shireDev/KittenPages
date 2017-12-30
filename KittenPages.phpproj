@@ -16,15 +16,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="config.php" />
-    <Compile Include="login\config-oo-format.php" />
-    <Compile Include="login\config.php" />
     <Compile Include="login.php" />
-    <Compile Include="login\login.php" />
-    <Compile Include="login\logout.php" />
-    <Compile Include="login\register-oo-format.php" />
-    <Compile Include="login\register-pdo-format.php" />
-    <Compile Include="login\register.php" />
-    <Compile Include="login\welcome.php" />
+    <Compile Include="logout.php" />
+    <Compile Include="register.php" />
     <Compile Include="post.php" />
     <Compile Include="content.php" />
     <Compile Include="html-generator.php" />
@@ -38,8 +32,5 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="style.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="login\" />
   </ItemGroup>
 </Project>

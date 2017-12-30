@@ -1,19 +1,25 @@
-<p id="demo">A Paragraph.</p>
-<!--<script src="script.js"></script>-->
+<?php
+    include_once "config.php";
+
+    $q = mysqli_query($link, "select * from posts order by id desc;");
+
+    $r = mysqli_fetch_all($q,MYSQLI_ASSOC);
+
+    foreach($r as $post){
+        $id = $post['id'];
+        $msg = $post['message'];
+        $author = $post['author'];
+        $time = $post['time'];
+
+        Html::div()
+            ->class("section")
+            ->content(
+                Html::div()
+                ->class("baloon")
+                ->content($msg)
+            )
+            ->show();
+    }
 
 
-<!--<script>
-    for (var i = 0; i < 5; i++) {
-        var para = document.createElement("div");
-        para.className = "section";
-        var p2 = document.createElement("div");
-        p2.className = "baloon";
-        para.appendChild(p2);
-        var x = 5;
-        var node = document.createTextNode("Number of repetition: " + x);
-        p2.appendChild(node);
-        document.getElementById("demo").appendChild(para);
-    }   
-</script>-->
-
-
+?>
