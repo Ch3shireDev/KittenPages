@@ -63,7 +63,7 @@
     $navigation = new Navigation();
 
     $navigation->Add('Content', 'content.php');
-    $navigation->Add('Post', 'post.php');
+    $navigation->Add('Publish', 'publish.php');
     $navigation->Add('Login', 'login.php');
     $navigation->Add('Register', 'register.php');
     $navigation->Add('Logout', 'logout.php');

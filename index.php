@@ -1,3 +1,14 @@
+<?php
+// Include config file
+require_once 'config.php';
+include "Parsedown.php";
+include "ParsedownExtra.php";
+include "html-generator.php";
+include "sections-config.php";
+include "baloon.php"
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -8,29 +19,6 @@
 </head>
 <body>
 
-    <?php
-    // Include config file
-    require_once 'config.php';
-
-    session_start();
-
-
-
-    //if(isset($_GET['page']) && $_GET['page'] == 'login'){
-
-
-        // Processing form data when form is submitted
-
-    //}
-
-
-
-    include "Parsedown.php";
-    include "ParsedownExtra.php";
-    include "html-generator.php";
-    include "sections-config.php";
-
-    ?>
 
 <div class="sidenav">
     <div class="side-header">
@@ -39,19 +27,25 @@
 
     <?php
 
-    $username = $password = "";
-    $username_err = $password_err = "";
+session_start();
+
+$username = $password = "";
+$username_err = $password_err = "";
 
 
-        for($i=0;$i<$navigation->Num();$i++){
-            $name = $navigation->GetName($i);
-            $varname = $navigation->GetVarname($i);
-            Html::a()
-                ->href("index.php?page=$varname")
-                ->Content($name)
-                ->Show();
-        }
-?>
+    for($i=0;$i<$navigation->Num();$i++){
+        $name = $navigation->GetName($i);
+        $varname = $navigation->GetVarname($i);
+        Html::a()
+            ->href("index.php?page=$varname")
+            ->Content($name)
+            ->Show();
+    }
+
+
+
+
+    ?>
 
 </div>
 <div class="navbar">

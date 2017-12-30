@@ -16,38 +16,51 @@ if(!isset($_SESSION["username"])){
 }
 $str = "";
 $send_button = null;
-
+$title = "";
+$message = "";
 $showSendButton = false;
 
 if(isset($_POST["message"])){
 
-    $msg = $_POST["message"];
+    $title = $_POST["title"];
+    $message = $_POST["message"];
     $sub = $_POST["submit"];
     $time = date("Y-m-d h:i:s");
 
 
     if (isset($sub["send"])) {
 
-        //$sql = "create table posts(id int(6) primary key, message mediumtext, varchar(64) author, time datetime)";
-        //$link->query($sql);
+        $sql = "create table if not exists posts(id int(6) primary key, title varchar(255), message mediumtext, author varchar(64), time datetime)";
+        $res = $link->query($sql);
+
+        print_r($res);
+
         //$sql = "insert into posts values(0,\"aaa\", \"abc\")"
 
         $q = mysqli_query($link, "select max(id) as maxid from posts;");
-        $f = mysqli_fetch_all($q, MYSQLI_ASSOC);
 
-        $id = $f[0]['maxid'] + 1;
+        $id = 0;
 
-        $x = "insert into posts values(".$id.", '".$msg."', '".$username."', '".$time."');";
+        print(gettype($q));
+
+        if(gettype($q)!="boolean"){
+            $f = mysqli_fetch_all($q, MYSQLI_ASSOC);
+            $id = $f[0]['maxid'] + 1;
+        }
+
+        $x = "insert into posts values(".$id.", '".$title."', '".$message."', '".$username."', '".$time."');";
         $res = mysqli_query($link, $x);
-        
-        header("Location: index.php");
-        die();
+
+        print_r($res);
+
+        //header("Location: index.php");
+        //die();
 
     }
     elseif (isset($sub["preview"])) {
 
         $Extra = new ParsedownExtra();
-        $str = $Extra->text($msg);
+        $str = $Extra->text($message);
 
         Html::div()
             ->class("section")
@@ -57,7 +70,7 @@ if(isset($_POST["message"])){
                 ->content($str)
             )
             ->show();
-        $str = $_POST["message"];
+        $message = $_POST["message"];
         $showSendButton = true;
 
     }
@@ -80,17 +93,24 @@ Html::div()
             ->class("input")
             ->content(
                 Html::form()
-                ->action("index.php?page=post")
+                ->action(htmlentities($_SERVER["PHP_SELF"]."?page=".$_GET['page']))
                 ->method("POST")
                 ->content(
                     Html::textarea()
-                    ->id("NewPost")
+                    ->class("titlebox")
+                    ->cols("50")
+                    ->name("title")
+                    ->placeholder("Enter title")
+                    ->content($title)
+                    ->dontFormat(),
+                    Html::textarea()
+                    ->class("messagebox")
                     ->cols("50")
                     ->rows("5")
                     ->placeholder("Enter some text...")
                     ->name("message")
                     ->dontFormat()
-                    ->content($str),
+                    ->content($message),
                     Html::div()
                     ->class("button")
                     ->content(
@@ -109,20 +129,4 @@ Html::div()
     )
     ->show();
 
-//<form action='' method=POST>
-//    (...) some input fields (...)
-//    <input type=submit name=submit[save] value=Save>
-//    <input type=submit name=submit[delete] value=Delete>
-//</form>
-
-
-//if (isset($_POST["submit"])) {
-//    $sub = $_POST["submit"];
-
-//    if (isset($sub["save"])) {
-//        // save something;
-//    } elseif (isset($sub["delete"])) {
-//        // delete something
-//    }
-//}
 ?>
