@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .input {
@@ -103,12 +103,6 @@ p {
     text-align: justify;
 }
 
-div.baloon {
-    background: #e8d1d1;
-    padding: 30px;
-    -webkit-border-radius: 30px 10px;
-    border-radius: 30px 10px;
-}
 
 div.section {
     /*margin = 10px;*/
@@ -218,4 +212,60 @@ height: auto;
 
 .login input{
     text-align: left;
+}
+
+/* baloon */
+
+.baloon {
+    background: #e8d1d1;
+    padding: 50px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    -webkit-border-radius: 30px 10px;
+    border-radius: 30px 10px;
+}
+
+.baloon .title{
+    text-transform: uppercase;
+    font-size-adjust: 0.7;
+    font-weight: bold;
+    margin: 2px 2px 5px 1px;
+}
+
+.baloon .message{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align:justify;
+}
+
+.baloon .footer{
+    display: inline-block;
+    width: 100%;
+}
+
+.footer *{
+    margin: 5px;
+    display:inline-block;
+    justify-content:center;
+}
+
+.footer .date{
+    float:left;
+    /*text-align:right;*/
+    /*display:*/
+}
+
+.footer .author {
+    float: right;
+    font-weight: bold;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size-adjust: 0.6;
+}
+
+.baloon .admin *{
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
 }

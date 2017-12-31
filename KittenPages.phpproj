@@ -19,6 +19,7 @@
     <Compile Include="config.php" />
     <Compile Include="login.php" />
     <Compile Include="logout.php" />
+    <Compile Include="post.php" />
     <Compile Include="register.php" />
     <Compile Include="publish.php" />
     <Compile Include="content.php" />

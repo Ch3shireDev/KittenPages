@@ -15,15 +15,6 @@
         $time = $post['time'];
 
         Baloon($title,$msg,$author,$time,$id)->show();
-
-        //Html::div()
-        //    ->class("section")
-        //    ->content(
-        //        Html::div()
-        //        ->class("baloon")
-        //        ->content($msg)
-        //    )
-        //    ->show();
     }
 
 

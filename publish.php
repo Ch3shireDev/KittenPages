@@ -26,6 +26,7 @@ if(isset($_POST["message"])){
     $message = $_POST["message"];
     $sub = $_POST["submit"];
     $time = date("Y-m-d h:i:s");
+    $id = 0;
 
 
     if (isset($sub["send"])) {
@@ -33,28 +34,21 @@ if(isset($_POST["message"])){
         $sql = "create table if not exists posts(id int(6) primary key, title varchar(255), message mediumtext, author varchar(64), time datetime)";
         $res = $link->query($sql);
 
-        print_r($res);
-
-        //$sql = "insert into posts values(0,\"aaa\", \"abc\")"
-
         $q = mysqli_query($link, "select max(id) as maxid from posts;");
-
-        $id = 0;
 
         print(gettype($q));
 
+        $f = mysqli_fetch_all($q, MYSQLI_ASSOC);
+        $id = $f[0]['maxid'] + 1;
+
         if(gettype($q)!="boolean"){
-            $f = mysqli_fetch_all($q, MYSQLI_ASSOC);
-            $id = $f[0]['maxid'] + 1;
+
+            $x = "insert into posts values(".$id.", '".$title."', '".$message."', '".$username."', '".$time."');";
+            $res = mysqli_query($link, $x);
+
         }
-
-        $x = "insert into posts values(".$id.", '".$title."', '".$message."', '".$username."', '".$time."');";
-        $res = mysqli_query($link, $x);
-
-        print_r($res);
-
-        //header("Location: index.php");
-        //die();
+        header("Location: index.php");
+        die();
 
     }
     elseif (isset($sub["preview"])) {
@@ -62,14 +56,8 @@ if(isset($_POST["message"])){
         $Extra = new ParsedownExtra();
         $str = $Extra->text($message);
 
-        Html::div()
-            ->class("section")
-            ->content(
-                Html::div()
-                ->class("baloon")
-                ->content($str)
-            )
-            ->show();
+        Baloon($title,$message,$username,$time,$id)->show();
+
         $message = $_POST["message"];
         $showSendButton = true;
 

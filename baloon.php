@@ -15,13 +15,27 @@ function Baloon($title, $message, $author, $date, $id){
                 ->class("message")
                 ->content($message),
             Html::div()
-                ->class("author")
-                ->content($author),
-            Html::div()
-                ->class("date")
-                ->content($date)
-                )
-            );
+                ->class("footer")
+                ->content(
+                    Html::div()
+                        ->class("author")
+                        ->content($author),
+                    Html::div()
+                        ->class("date")
+                        ->content($date)
+                ),
+                Html::div()
+                    ->class("admin")
+                    ->content(
+                        Html::div()
+                            ->class("edit")
+                            ->content("Edit"),
+                        Html::div()
+                            ->class("delete")
+                            ->content("Delete")
+                        )
+                    )
+                );
 }
 
 ?>

@@ -5,13 +5,15 @@ A simple PHP system for information page.
 - Added simple registration/login system.
 - Added posting system.
 - Added showing content system.
+- Improved CSS and post design.
 
 TODO:
 
-- [ ] Add Delete/Edit system
-- [ ] Fix post display
-- [ ] Create Markdown/MathJax parser
-- [ ] Add AJAX/jQuery system
+- [ ] Add Delete/Edit system.
+- [x] Fix post display.
+- [ ] Add Markdown/MathJax parser.
+- [ ] Add AJAX/jQuery system.
+- [ ] Add Bootstrap.
 
 Includes:
 - [HTML Generator](https://github.com/Ch3shireDev/html-generator)
