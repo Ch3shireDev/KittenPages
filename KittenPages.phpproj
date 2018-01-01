@@ -17,6 +17,7 @@
   <ItemGroup>
     <Compile Include="baloon.php" />
     <Compile Include="config.php" />
+    <Compile Include="getpost.php" />
     <Compile Include="login.php" />
     <Compile Include="logout.php" />
     <Compile Include="post.php" />
@@ -33,6 +34,8 @@
     <Compile Include="sections-config.php" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content.js" />
+    <Content Include="getpost.js" />
     <Content Include="style.css" />
   </ItemGroup>
 </Project>

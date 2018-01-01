@@ -1,6 +1,7 @@
 ﻿
 * {
     box-sizing: border-box;
+    font-size: 12px;
 }
 
 body {
@@ -27,7 +28,8 @@ textarea {
     margin-bottom: 4px;
     height: 28px;
     font-family: inherit;
-    font-weight:100;
+    font-weight: 100;
+    font-size-adjust:0.7;
     width:100%;
 }
 
@@ -63,6 +65,7 @@ textarea {
     color: #dddddd;
     text-shadow: 0 0 1px #dddddd;
     font-size: xx-large;
+    font-size-adjust:0.9;
 }
 
 .sidenav {
@@ -227,7 +230,7 @@ height: auto;
 
 .baloon .title{
     text-transform: uppercase;
-    font-size-adjust: 0.7;
+    font-size-adjust: 0.5;
     font-weight: bold;
     margin: 2px 2px 5px 1px;
 }
@@ -237,6 +240,7 @@ height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align:justify;
+    font-size: 12px;
 }
 
 .baloon .footer{

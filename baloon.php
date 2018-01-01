@@ -1,5 +1,5 @@
 <?php
-
+include_once "html-generator.php";
 
 function Baloon($title, $message, $author, $date, $id){
     return Html::div()

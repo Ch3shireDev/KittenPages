@@ -4,6 +4,6 @@
 
     $id = $_GET['id'];
 
-    $link->query('select * from posts where id == '.$id);
+    $link->query('select * from posts where id = '.$id);
 
 ?>
