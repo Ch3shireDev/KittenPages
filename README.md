@@ -7,7 +7,11 @@ A simple PHP system for information page.
 - Added showing content system.
 - Improved CSS and post design.
 
-TODO:
+#### Activities model
+
+![made in StarUML](./diagrams/activities.png)
+
+#### TODOs
 
 - [ ] Add Delete/Edit system.
 - [x] Fix post display.
@@ -15,8 +19,9 @@ TODO:
 - [ ] Add AJAX/jQuery system.
 - [ ] Add Bootstrap.
 
-Includes:
+#### Includes
 - [HTML Generator](https://github.com/Ch3shireDev/html-generator)
 - [Parsedown](http://parsedown.org/)
 - [Parsedown extra](https://github.com/erusev/parsedown-extra)
 - [MathJax](https://www.mathjax.org/)
+
