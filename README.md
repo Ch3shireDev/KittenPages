@@ -11,6 +11,10 @@ A simple PHP system for information page.
 
 ![made in StarUML](./diagrams/activities.png)
 
+#### Files arrangment
+
+![made in StarUML](./diagrams/files.png)
+
 #### TODOs
 
 - [ ] Add Delete/Edit system.
