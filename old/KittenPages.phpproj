@@ -1,0 +1,47 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>KittenPages</Name>
+    <ProjectGuid>{297cc62f-cc98-4274-8fff-eec7f1d2192d}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="test\content.php" />
+    <Compile Include="test\index.php" />
+    <Compile Include="baloon.php" />
+    <Compile Include="config.php" />
+    <Compile Include="getpost.php" />
+    <Compile Include="login.php" />
+    <Compile Include="logout.php" />
+    <Compile Include="post.php" />
+    <Compile Include="register.php" />
+    <Compile Include="publish.php" />
+    <Compile Include="content.php" />
+    <Compile Include="html-generator.php" />
+    <Compile Include="index.php" />
+    <Compile Include="Parsedown.php" />
+    <Compile Include="ParsedownExtra.php" />
+    <Compile Include="README.md" />
+    <Compile Include="script.js" />
+    <Compile Include="admin.php" />
+    <Compile Include="sections-config.php" />
+    <Compile Include="test\sidebar.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content.js" />
+    <Content Include="getpost.js" />
+    <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test\" />
+  </ItemGroup>
+</Project>

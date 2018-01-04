@@ -2,23 +2,16 @@
 
 A simple PHP system for information page.
 
-- Added simple registration/login system.
-- Added posting system.
-- Added showing content system.
-- Improved CSS and post design.
+- Reset of all structure (old files in `./old`).
 
-#### Activities model
+#### Activities model and file arrangement
 
-![made in StarUML](./diagrams/activities.png)
-
-#### Files arrangment
-
-![made in StarUML](./diagrams/files.png)
+![made in StarUML](./diagram.png)
 
 #### TODOs
 
 - [ ] Add Delete/Edit system.
-- [x] Fix post display.
+- [ ] Fix post display.
 - [ ] Add Markdown/MathJax parser.
 - [ ] Add AJAX/jQuery system.
 - [ ] Add Bootstrap.
