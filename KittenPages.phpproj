@@ -19,8 +19,10 @@
     <Compile Include="content.php" />
     <Compile Include="index.php" />
     <Compile Include="navigation.php" />
+    <Compile Include="posts.php" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.js" />
     <Content Include="navigation.js" />
     <Content Include="README.md" />
     <Content Include="style.css" />

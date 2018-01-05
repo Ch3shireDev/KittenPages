@@ -2,6 +2,7 @@
     /*box-sizing:border-box;*/
     /*opacity: 0.5;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*position: relative;*/
     position: absolute;
     /*border: 1px solid;*/
     padding: 0;
@@ -10,7 +11,7 @@
 
 .mainbar {
     left: 0;
-    right: 30%;
+    right: 25%;
     top: 0;
     bottom: 0;
 }
@@ -24,13 +25,19 @@
 
 .sidebar {
     right: 0;
-    width: 30%;
+    width: 25%;
     top: 0;
     bottom: 0;
-    background-color: #990000;
+    background-color: #1f1f1f;
+    color: white;
+    position: page;
+    margin:0;
+    padding: 0;
+    position:fixed;
 }
 
 .header {
+    /*display: table;*/
     top: 0;
     height: 30%;
     width: 100%;
@@ -44,9 +51,17 @@
     text-shadow: 0px 0px 10px white;
 }
 
+    .header p {
+        top:0;
+        margin: 5%;
+        align-content: center;
+    }
+
 .content {
+    top: 30%;
     border: 1px solid;
     background-color: darkred;
+    position: relative;
 }
 
     .content * {
@@ -71,13 +86,14 @@
     }
 
     .sidebar .button {
-        padding: 5px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
         width: 100%;
         text-align: center;
     }
 
         .sidebar .button:hover {
             background-color: white;
+            color: black;
         }
