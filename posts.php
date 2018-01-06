@@ -1,5 +1,4 @@
 <?php
-    for($i=0;$i<10;$i++){
-        echo "<p>Hello ".$i."</p>";
-    }
+$index = 0;
+include "./posts/show.php";
 ?>

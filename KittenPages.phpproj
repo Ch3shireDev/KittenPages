@@ -16,15 +16,27 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="config.php" />
     <Compile Include="content.php" />
     <Compile Include="index.php" />
     <Compile Include="navigation.php" />
     <Compile Include="posts.php" />
+    <Compile Include="posts\browse.php" />
+    <Compile Include="posts\delete.php" />
+    <Compile Include="posts\edit.php" />
+    <Compile Include="posts\preview.php" />
+    <Compile Include="posts\publish.php" />
+    <Compile Include="posts\read.php" />
+    <Compile Include="posts\show.php" />
+    <Compile Include="posts\write.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.js" />
     <Content Include="navigation.js" />
     <Content Include="README.md" />
     <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="posts\" />
   </ItemGroup>
 </Project>

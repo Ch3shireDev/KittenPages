@@ -17,9 +17,11 @@
         </div>
     </div>
     <div class="sidebar">
-        <?php
-        include 'navigation.php';
-        ?>
+        <div class="navigation">
+            <?php
+            include 'navigation.php';
+            ?>
+        </div>
     </div>
 </body>
 </html>
