@@ -16,11 +16,14 @@ body {
 }
 
 .mainbar {
+    border: solid 1px;
+    display: flex;
     top: 0;
     bottom: 0;
     left: 0;
     right: 25%;
     background-color: darkred;
+
 }
 
     .mainbar * {
@@ -42,7 +45,7 @@ body {
             top: 0;
             padding: 5px;
             left: 5px;
-            color: white;
+            color: black;
         }
 
 
@@ -103,4 +106,83 @@ body {
         .sidebar .button:hover {
             background-color: white;
             color: black;
+        }
+
+
+
+.section {
+    font-size: 10px;
+    /*margin = 10px;*/
+    /*color = red;*/
+    /*border: 1px solid black;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    /*background-color: lightblue;*/
+    border: 1px solid;
+}
+
+
+.baloon {
+    position: relative;
+    right: 20px;
+    background: #e8d1d1;
+    padding: 50px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    -webkit-border-radius: 30px 10px;
+    border-radius: 30px 10px;
+}
+
+    .baloon .title {
+        text-transform: uppercase;
+        font-size-adjust: 0.5;
+        font-weight: bold;
+        margin: 2px 2px 5px 1px;
+    }
+
+    .baloon .message {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .baloon .admin{
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+
+    .baloon .admin * {
+        display: inline-block;
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .baloon .footer {
+        display: inline-block;
+        width: 100%;
+    }
+
+        .baloon .footer * {
+            margin: 20px;
+            
+            display: inline-block;
+            justify-content: center;
+        }
+
+        .baloon .footer .date {
+            float: left;
+            /*text-align:right;*/
+            /*display:*/
+        }
+
+        .baloon .footer .author {
+            float: right;
+            font-weight: bold;
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            font-size-adjust: 0.6;
         }

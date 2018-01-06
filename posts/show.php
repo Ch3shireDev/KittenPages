@@ -1,9 +1,10 @@
 <?php
-include_once('config.php');
+include '../config.php';
+include 'baloon.php';
 
-if(!isset($index))exit;
+if(!isset($_POST['index']))exit;
 
-$i = $index;
+$i = $_POST['index'];
 $x = mysqli_query($link, "select * from posts order by id desc limit ".$i.", 1");
 $x = mysqli_fetch_all($x)[0];
 
@@ -13,7 +14,6 @@ $message = $x[2];
 $author = $x[3];
 $date = $x[4];
 
-echo $message;
-    //echo Baloon($title,$message,$author,$date,$id);
+echo Baloon($title, $message, $author, $date, $id);
 
 ?>
