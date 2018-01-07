@@ -16,8 +16,8 @@ body {
 }
 
 .mainbar {
+
     border: solid 1px;
-    display: flex;
     top: 0;
     bottom: 0;
     left: 0;
@@ -37,6 +37,8 @@ body {
         top: 30%;
         background-color: transparent;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
         .mainbar .content * {
@@ -110,7 +112,9 @@ body {
 
 
 
-.section {
+.post {
+    background-color: white;
+    opacity: 0.7;
     font-size: 10px;
     /*margin = 10px;*/
     /*color = red;*/
@@ -124,7 +128,7 @@ body {
 }
 
 
-.baloon {
+/*.background {
     position: relative;
     right: 20px;
     background: #e8d1d1;
@@ -135,14 +139,14 @@ body {
     border-radius: 30px 10px;
 }
 
-    .baloon .title {
+    .background .title {
         text-transform: uppercase;
         font-size-adjust: 0.5;
         font-weight: bold;
         margin: 2px 2px 5px 1px;
     }
 
-    .baloon .message {
+    .background .message {
         margin: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -150,39 +154,39 @@ body {
         font-size: 12px;
     }
 
-    .baloon .admin{
+    .background .admin{
         margin: 20px;
         margin-bottom: 30px;
     }
 
-    .baloon .admin * {
+    .background .admin * {
         display: inline-block;
         float: right;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .baloon .footer {
+    .background .footer {
         display: inline-block;
         width: 100%;
     }
 
-        .baloon .footer * {
+        .background .footer * {
             margin: 20px;
             
             display: inline-block;
             justify-content: center;
         }
 
-        .baloon .footer .date {
+        .background .footer .date {
             float: left;
             /*text-align:right;*/
             /*display:*/
         }
 
-        .baloon .footer .author {
+        .background .footer .author {
             float: right;
             font-weight: bold;
             font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
             font-size-adjust: 0.6;
-        }
+        }*/

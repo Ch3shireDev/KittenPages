@@ -1,6 +1,6 @@
 <?php
 include '../config.php';
-include 'baloon.php';
+include 'display.php';
 
 if(!isset($_POST['index']))exit;
 
@@ -14,6 +14,6 @@ $message = $x[2];
 $author = $x[3];
 $date = $x[4];
 
-echo Baloon($title, $message, $author, $date, $id);
+echo display($title, $message, $author, $date, $id);
 
 ?>

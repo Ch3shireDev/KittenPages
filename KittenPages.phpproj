@@ -16,8 +16,12 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ex\example2.php" />
+    <Compile Include="ex\index.php" />
+    <Compile Include="posts\display.php" />
     <Compile Include="config.php" />
     <Compile Include="content.php" />
+    <Compile Include="html-generator.php" />
     <Compile Include="index.php" />
     <Compile Include="navigation.php" />
     <Compile Include="posts.php" />
@@ -31,12 +35,15 @@
     <Compile Include="posts\write.php" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ex\example1.css" />
+    <Content Include="ex\example1.php" />
     <Content Include="index.js" />
     <Content Include="navigation.js" />
     <Content Include="README.md" />
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ex\" />
     <Folder Include="posts\" />
   </ItemGroup>
 </Project>

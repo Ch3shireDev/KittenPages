@@ -1,12 +1,12 @@
 <?php
 include_once "../html-generator.php";
 
-function Baloon($title, $message, $author, $date, $id){
+function display($title, $message, $author, $date, $id){
     return Html::div()
-        ->class("section")
+        ->class("post")
         ->content(
             Html::div()
-            ->class("baloon")
+            ->class("background")
             ->content(
                 Html::div()
                 ->class("title")
