@@ -8,6 +8,11 @@
         margin: 0;
     }
 
+    .left .leftc {
+        background-color: red;
+        min-height: 100vh;
+    }
+
     .left {
         width: calc(100% - 250px);
     }
@@ -16,9 +21,6 @@
         height: 100%;
     }
 
-    .left .leftc {
-        background-color: red;
-    }
 
     .right {
         width: 250px;
@@ -30,17 +32,22 @@
 <body>
     <div class="left">
         <div class="leftc">
-            ABC
+            abc
+<?php
+for($i=0;$i<100;$i++){
+    echo "<p>abc</p>\n";
+}
+?>
         </div>
     </div>
     <div class="right">
 
     </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
     for (i = 0; i < 100; i++)
     $(".leftc").append("<p>xxx</p>");
-</script>
+</script>-->
 </body>
 </html>
