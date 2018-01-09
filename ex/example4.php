@@ -5,10 +5,30 @@
         body {
             margin: 0;
             display: flex;
-            font-family: "Open Sans",Arial,sans-serif;
-            color: white;
-            font-size: 20px;
+            /*font-family: "Open Sans",Arial,sans-serif;*/
+            font-family: -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                "Helvetica Neue",
+                Arial,
+                sans-serif,
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol";
             height: 100%;
+        }
+
+        .h1, h1 {
+            font-size: 2.5rem;
+        }
+
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: .5rem;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
         }
 
         .all{
@@ -28,7 +48,7 @@
             margin-right: auto;
             width: 100%;
             height: 150px;
-            background: #4d0202;
+            background: hsl(238, 53%, 66%);
             text-align: center;
             vertical-align: middle;
             /*align-content:center;*/
@@ -43,20 +63,20 @@
         .content{
             display: flex;
             width: 100%;
-            background: black;
             min-height: calc(100vh - 150px);
+            color: black;
+        }
+
+        .right {
+            padding-top: 70px;
+            background: hsl(0, 0%, 85%);
+            width: 200px;
         }
 
         .left{
-            background: darkred;
-            width: calc(100% - 250px);
+            background: hsl(0, 0%, 90%);
+            width: calc(100% - 200px);
             padding-top: 10px;
-        }
-
-        .right{
-            padding-top: 70px;
-            background: #6f0101;
-            width: 250px;
         }
 
         .button{
@@ -66,19 +86,15 @@
         }
 
         .button:hover{
-            background: white;
-            font-weight: 900;
-            opacity: 0.5;
-            color: black;
+            background: rgba(255, 255, 255, 0.64);
         }
 
-        .post{
+        .post {
             margin: 10%;
-            background: rgba(255, 255, 255, 0.49);
+            background: hsl(0, 0%, 85%);
             /*opacity: 0.5;*/
             min-height: 200px;
             border-radius: 10px;
-            color: white;
             padding: 5px 5% 5px 5%;
         }
 
@@ -87,12 +103,12 @@
 <body>
     <div class="all">
         <div class="header">
-            <h1>header</h1>
+            <h1>My First Page</h1>
         </div>
         <div class="content">
             <div class="left">
                 <div class="post">
-                    <h3>Post Title</h3>
+                    <h2>Post Title</h2>
                 </div>
             </div>
     <div class="right">

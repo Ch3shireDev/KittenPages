@@ -19,6 +19,7 @@
     <Compile Include="ex\example2.php" />
     <Compile Include="ex\example3.php" />
     <Compile Include="ex\example4.php" />
+    <Compile Include="ex\example5.php" />
     <Compile Include="ex\index.php" />
     <Compile Include="posts\display.php" />
     <Compile Include="config.php" />
