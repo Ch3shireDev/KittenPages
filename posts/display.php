@@ -10,7 +10,9 @@ function display($title, $message, $author, $date, $id){
             ->content(
                 Html::div()
                 ->class("title")
-                ->content($title),
+                ->content(
+                Html::h3($title)
+                ),
             Html::div()
                 ->class("message")
                 ->content($message),

@@ -21,8 +21,8 @@
     <Compile Include="ex\example3.php" />
     <Compile Include="ex\example4.php" />
     <Compile Include="ex\example5.php" />
+    <Compile Include="ex\example8.php" />
     <Compile Include="ex\index.php" />
-    <Compile Include="ex\Script1.php" />
     <Compile Include="posts\display.php" />
     <Compile Include="config.php" />
     <Compile Include="content.php" />
@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ex\example7.php" />
-    <Content Include="ex\example1.css" />
     <Content Include="ex\example1.php" />
     <Content Include="index.js" />
     <Content Include="navigation.js" />
