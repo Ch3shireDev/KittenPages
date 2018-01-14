@@ -13,7 +13,7 @@ if($i<$N){
 
     $x = mysqli_query($link, "select * from posts order by id desc limit ".$i.", 1");
     $x = mysqli_fetch_all($x);
-    if(sizeof($x) == 0)exit;
+    //if(sizeof($x) == 0)exit;
     $x = $x[0];
     $id = $x[0];
     $title = $x[1];

@@ -18,7 +18,7 @@
     }
 
     $(window).scroll(function () {
-        
+
         var body = document.body,
             html = document.documentElement;
 
@@ -26,7 +26,7 @@
             html.clientHeight, html.scrollHeight, html.offsetHeight);
 
         var current = html.scrollTop + html.clientHeight;
-        
+
         var str = current + " " + height;
 
         if (current > height - 500) {
@@ -34,6 +34,17 @@
         }
     });
 
-    $(".admin").click(function () { alert("xxx"); });
+    $(document).on('click', '.delete', function () {
+        if (confirm("Are you sure to delete post?")) {
 
+            $(this).
+
+            $.post('./posts/delete.php', { id: 0 },
+                function (data) {
+
+                    //alert(data);
+                }
+            );
+        }
+    });
 }

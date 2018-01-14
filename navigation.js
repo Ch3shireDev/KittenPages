@@ -1,10 +1,12 @@
 ﻿$(".button").click(function () {
     $(window).off();
-    var value = $(".button").index(this);
-    if (value == 0) {
+
+    var name = $(this).attr('name');
+
+    if (name == "browse") {
         $.getScript("./posts/browse.js", function () { browse(); });
     }
-    else if (value == 1) {
+    else if(name == "publish") {
         $.getScript("./posts/publish.js", function () { publish(); });
     }
 });

@@ -1,12 +1,14 @@
 # Kitten Pages
 
+![](./docs/page.png)
+
 A simple PHP system for information page.
 
 - Reset of all structure (old files in `./old`).
 
 #### Activities model and file arrangement
 
-![made in StarUML](./diagram.png)
+![made in StarUML](./docs/diagram.png)
 
 #### TODOs
 
