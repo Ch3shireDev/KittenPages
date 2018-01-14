@@ -88,6 +88,10 @@ body {
     font-size: 0.9rem;
 }
 
+    .post:hover {
+        box-shadow: #888888 2px 2px 2px 2px;
+    }
+
 .title{
 }
 
@@ -125,38 +129,42 @@ body {
     font-size: 0.8rem;
 }
 
-.admin *{
-    float: right;
-    padding: 2px 5px 3px 5px;
-    margin: 0px 0px 0px 20px;
-    color: white;
-    width: 40px;
-    text-align: center;
-    font-weight: 600;
-}
+    .admin * {
+        float: right;
+        padding: 2px 5px 3px 5px;
+        margin: 0px 0px 0px 20px;
+        color: white;
+        width: 40px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow: #888888 1px 1px 1px 1px;
+    }
 
 
 
 .admin .edit{
     order: 2;
     border-radius: 5px;
-    background-color: hsla(247, 59%, 31%, 0.73);
+    background-color: hsla(247, 59%, 50%, 0.73);
     
 }
 
 .admin .delete{
     order: 1;
     border-radius: 5px;
-    background-color: hsla(0, 85%, 20%, 0.88);
+    background-color: hsla(0, 85%, 50%, 0.88);
 
 }
 
     .admin :hover {
-        background-color: hsl(0, 74%, 66%);
-        color: black;
         cursor: pointer;
+        box-shadow: #888888 2px 2px 2px 2px;
     }
 
-.post :hover{
-    color: red;
+.delete:hover {
+    background-color: hsl(0, 100%, 66%);
+}
+
+.edit:hover {
+    background-color: hsl(244, 100%, 67%);
 }
