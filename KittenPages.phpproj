@@ -23,7 +23,7 @@
     <Compile Include="ex\example5.php" />
     <Compile Include="ex\example8.php" />
     <Compile Include="ex\index.php" />
-    <Compile Include="posts\display.php" />
+    <Compile Include="posts\generate.php" />
     <Compile Include="config.php" />
     <Compile Include="content.php" />
     <Compile Include="html-generator.php" />
@@ -38,17 +38,24 @@
     <Compile Include="posts\read.php" />
     <Compile Include="posts\show.php" />
     <Compile Include="posts\write.php" />
+    <Compile Include="user.php" />
+    <Compile Include="user\login.php" />
+    <Compile Include="user\logout.php" />
+    <Compile Include="user\panel.php" />
+    <Compile Include="user\register.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ex\example7.php" />
     <Content Include="ex\example1.php" />
     <Content Include="index.js" />
     <Content Include="navigation.js" />
+    <Content Include="posts\browse.js" />
     <Content Include="README.md" />
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ex\" />
+    <Folder Include="user\" />
     <Folder Include="posts\" />
   </ItemGroup>
 </Project>

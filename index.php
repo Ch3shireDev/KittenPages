@@ -14,36 +14,9 @@
             <?php include 'content.php'; ?>
             </div>
             <div class="navigation">
-                <div class="button">button 1</div>
-                <div class="button">button 2</div>
-                <div class="button">button 3</div>
+                <?php include 'navigation.php'; ?>
             </div>
         </div>
     </div>
 </body>
 </html>
-
-
-<!--<head>
-
-</head>-->
-
-<!--<body>
-    <div class="mainbar">
-        <div class="header">
-            <p>header</p>
-        </div>
-        <div class="content">-->
-            <!--?php
-            include 'content.php';
-            ?-->
-        <!--</div>
-    </div>
-    <div class="sidebar">
-        <div class="navigation">-->
-            <!--?php
-            include 'navigation.php';
-            ?-->
-        <!--</div>
-    </div>
-</body>-->

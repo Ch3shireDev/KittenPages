@@ -1,18 +1,20 @@
 ﻿$(".button").click(function () {
+    $(window).off();
     var value = $(".button").index(this);
-    //alert(value);
     if (value == 0) {
-        $.ajax({
-            method: 'get',
-            url: 'posts.php',
-            data: {
-                //'myString': scriptString,
-                'ajax': true
-            },
-            success: function (data) {
-                alert(data);
-                //$('#kot').text(data);
-            }
-        });
+        $.getScript("./posts/browse.js", function () { browse(); });
+    }
+    else if (value == 1) {
+        $(".content").html("xyz");
+        //$.ajax({
+        //    method: 'get',
+        //    url: 'posts.php',
+        //    data: {
+        //        'mode': 'publish'
+        //    },
+        //    success: function (data) {
+        //        alert("yyy");
+        //    }
+        //});
     }
 });

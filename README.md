@@ -10,8 +10,11 @@ A simple PHP system for information page.
 
 #### TODOs
 
-- [ ] Add Delete/Edit system.
-- [ ] Fix post display.
+- [x] Fix post display.
+- [x] Add Browse Posts system.
+- [ ] Add Delete Post system.
+- [ ] Add Preview Post system.
+- [ ] Add Publish Post system.
 - [ ] Add Markdown/MathJax parser.
 - [ ] Add AJAX/jQuery system.
 - [ ] Add Bootstrap.

@@ -1,7 +1,7 @@
 <?php
 include_once "../html-generator.php";
 
-function display($title, $message, $author, $date, $id){
+function generate($title, $message, $author, $date, $id){
     return Html::div()
         ->class("post")
         ->content(
