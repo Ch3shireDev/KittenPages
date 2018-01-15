@@ -25,7 +25,6 @@
     <Compile Include="ex\index.php" />
     <Compile Include="posts\generate.php" />
     <Compile Include="config.php" />
-    <Compile Include="content.php" />
     <Compile Include="html-generator.php" />
     <Compile Include="index.php" />
     <Compile Include="navigation.php" />
@@ -50,6 +49,7 @@
     <Content Include="index.js" />
     <Content Include="navigation.js" />
     <Content Include="posts\browse.js" />
+    <Content Include="posts\publish.js" />
     <Content Include="README.md" />
     <Content Include="style.css" />
   </ItemGroup>

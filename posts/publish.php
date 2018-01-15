@@ -7,7 +7,7 @@ $message = '';
 $showSendButton = true;
 
 Html::div()
-    ->class("post")
+    ->class("post publish")
     ->content(
         Html::div()
             ->class("background")
