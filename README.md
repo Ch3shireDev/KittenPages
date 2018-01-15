@@ -16,8 +16,8 @@ A simple PHP system for information page.
 - [x] Added AJAX/jQuery system.
 - [x] Added Browse Posts system.
 - [x] Added Delete Post system.
-- [ ] Added Write Post system.
-- [ ] Added Preview Post system.
+- [x] Added Write Post system.
+- [x] Added Preview Post system.
 - [ ] Added Publish Post system.
 - [ ] Added Edit Post system.
 - [ ] Added Markdown/MathJax parser.

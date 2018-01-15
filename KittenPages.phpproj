@@ -35,6 +35,7 @@
     <Compile Include="posts\preview.php" />
     <Compile Include="posts\publish.php" />
     <Compile Include="posts\read.php" />
+    <Compile Include="posts\send.php" />
     <Compile Include="posts\show.php" />
     <Compile Include="posts\write.php" />
     <Compile Include="user.php" />
@@ -50,6 +51,7 @@
     <Content Include="navigation.js" />
     <Content Include="posts\browse.js" />
     <Content Include="posts\publish.js" />
+    <Content Include="posts\send.js" />
     <Content Include="README.md" />
     <Content Include="style.css" />
   </ItemGroup>

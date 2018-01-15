@@ -1,14 +1,17 @@
-﻿$.getScript("./posts/browse.js", function () { getContent(); });
+﻿function select(name, section) {
+    if (name == section) {
+        $(window).off();
+        $.getScript("./posts/"+section+".js", function () { getContent(); });
+    }
+}
+
+select("browse", "browse");
 
 $(".button").click(function () {
-    $(window).off();
 
     var name = $(this).attr('name');
 
-    if (name == "browse") {
-        $.getScript("./posts/browse.js", function () { getContent(); });
-    }
-    else if(name == "publish") {
-        $.getScript("./posts/publish.js", function () { getContent(); });
-    }
+    select(name, "browse");
+    select(name, "publish");
+    
 });
