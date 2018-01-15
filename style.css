@@ -57,40 +57,53 @@ body {
     padding-top: 70px;
     background: hsl(0, 0%, 85%);
     width: 200px;
+    min-width: 200px;
 }
 
 .content {
     background: hsl(0, 0%, 90%);
     width: calc(100% - 200px);
     padding-top: 10px;
+    justify-content: center;
+    min-width: 800px;
+
 }
 
-.button {
+.navigation .button {
     padding: 20px;
     text-align: center;
     text-transform: capitalize;
 }
 
-    .button:hover {
+    .navigation .button:hover {
         background: rgba(255, 255, 255, 0.64);
         box-shadow: #888888 1px 1px 1px;
         cursor: pointer;
     }
 
 .post {
+
     min-width: 300px;
-    margin: 10%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
     background: hsl(0, 0%, 85%);
     min-height: 100px;
     border-radius: 10px;
     padding: 5px 5% 5px 5%;
     box-shadow: #888888 1px 1px 1px 1px;
     font-size: 0.9rem;
+    display: flex;
 }
 
     .post:hover {
         box-shadow: #888888 2px 2px 2px 2px;
     }
+
+.background{
+    margin: 5px;
+}
 
 .title{
 }
@@ -167,4 +180,38 @@ body {
 
 .edit:hover {
     background-color: hsl(244, 100%, 67%);
+}
+
+
+
+input, textarea {
+    resize: none;
+    font-family: inherit;
+    margin:auto;
+    margin-bottom: 5px;
+    height: 28px;
+    width: 100%;
+
+}
+
+.messagebox{
+    height: 200px;
+}
+
+.input {
+    width: 100%;
+    /*padding: 5px;*/
+}
+
+.input .button{
+    display: table;
+    float: right;
+    margin-left: 5px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.input .button *{
+    width: 100px;
+    float: right;
 }

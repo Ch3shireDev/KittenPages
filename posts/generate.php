@@ -4,6 +4,7 @@ include_once "../html-generator.php";
 function generate($title, $message, $author, $date, $id){
     return Html::div()
         ->class("post")
+        ->id($id)
         ->content(
             Html::div()
             ->class("background")

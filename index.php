@@ -11,7 +11,6 @@
         </div>
         <div class="section">
             <div class="content">
-            <?php include 'content.php'; ?>
             </div>
             <div class="navigation">
                 <?php include 'navigation.php'; ?>

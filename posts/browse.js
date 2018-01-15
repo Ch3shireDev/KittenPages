@@ -1,4 +1,4 @@
-﻿function browse() {
+﻿function getContent() {
 
     var Index = 0;
 
@@ -37,14 +37,16 @@
     $(document).on('click', '.delete', function () {
         if (confirm("Are you sure to delete post?")) {
 
-            $(this).
+            post = $(this).parent().parent().parent();
+            id = post.attr('id');
 
-            $.post('./posts/delete.php', { id: 0 },
+            $.post('./posts/delete.php', { id: id },
                 function (data) {
-
-                    //alert(data);
+                    //here i should confirm if deletion was success
                 }
             );
+
+            post.remove();
         }
     });
 }

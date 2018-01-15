@@ -65,56 +65,5 @@ if(isset($_POST["message"])){
 
 }
 
-Html::div()
-    ->class("section")
-    ->content(
-        Html::div()
-        ->class("baloon")
-        ->content(
-            Html::header()
-            ->content(
-                Html::p("Admin Panel")
-                ->class("head")
-            ),
-            Html::p("Publish new post:"),
-            Html::div()
-            ->class("input")
-            ->content(
-                Html::form()
-                ->action(htmlentities($_SERVER["PHP_SELF"]."?page=".$_GET['page']))
-                ->method("POST")
-                ->content(
-                    Html::textarea()
-                    ->class("titlebox")
-                    ->cols("50")
-                    ->name("title")
-                    ->placeholder("Enter title")
-                    ->content($title)
-                    ->dontFormat(),
-                    Html::textarea()
-                    ->class("messagebox")
-                    ->cols("50")
-                    ->rows("5")
-                    ->placeholder("Enter some text...")
-                    ->name("message")
-                    ->dontFormat()
-                    ->content($message),
-                    Html::div()
-                    ->class("button")
-                    ->content(
-                        Html::input()
-                        ->type("submit")
-                        ->value("Preview")
-                        ->name("submit[preview]", false),
-                        $showSendButton ? Html::input()
-                                            ->type("submit")
-                                            ->value("Send")
-                                            ->name("submit[send]", false) : null
-                    )
-                )
-            )
-        )
-    )
-    ->show();
 
 ?>
